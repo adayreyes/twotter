@@ -1,15 +1,19 @@
+:root{
+  --blue: #1D9BF0;
+}
+
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.bold{
+  font-weight: bold;
+}
+
 #app{
   display: flex;
   max-width: 1200px;
   min-height: 100vh;
-}
-
-#app > *{
-  padding: 2rem;
 }

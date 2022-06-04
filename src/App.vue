@@ -6,13 +6,13 @@ import TrendsComponent from './components/TrendsComponent.vue'
 
 <template>
   <header>
-    <HeaderComponent/>
+    <HeaderComponent />
   </header>
   <main>
-    <MainComponent/>
+    <MainComponent />
   </main>
   <section class="trends" id="trends">
-    <TrendsComponent/>
+    <TrendsComponent />
   </section>
 </template>
 
@@ -21,12 +21,16 @@ import TrendsComponent from './components/TrendsComponent.vue'
 </style>
 
 <style scoped>
+header {
+  display: flex;
+  position: sticky;
+  padding: 2rem;
+  top: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  border-right: 1px solid grey;
+}
 
-  header{
-     display: flex;
-     position: fixed;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 80vh;
-  }
+
 </style>
