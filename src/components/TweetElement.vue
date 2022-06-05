@@ -1,15 +1,15 @@
 <template>
     <div class="header-container">
-        <img class="user-img" :src="'src/assets/img/' + userImg" alt="">
+        <img class="user-img" :src="'src/assets/img/' + tweet.userImg" alt="">
         <div class="text-container">
             <div class="user-info">
-                <span class="bold">{{name}}</span>
-                <span>{{user}}</span>
+                <span class="bold">{{tweet.name}}</span>
+                <span>{{tweet.user}}</span>
             </div>
-            <p>{{content}}</p>
+            <p>{{tweet.content}}</p>
         </div>
     </div>
-    <img class="content-img" :src="'src/assets/img/' + img" alt="">
+    <img class="content-img" :src="'src/assets/img/' + tweet.img" alt="">
 </template>
 
 <style scoped>
@@ -42,6 +42,6 @@
 <script>
     export default{
         name: "TweetElement",
-        props: ["name","user","content","userImg","img"]
+        props: ["tweet"]
     }
 </script>

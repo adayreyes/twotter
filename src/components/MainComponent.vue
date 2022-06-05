@@ -16,7 +16,7 @@
     </section>
     <section class="content">
         <div v-for="tweet in tweets" class="tweet-container">
-            <TweetElement :name="tweet.name" :user="tweet.user" :content="tweet.content" :img="tweet.img" :userImg="tweet.userImg"/>
+            <TweetElement :tweet="tweet"/>
         </div>
     </section> 
 </template>
@@ -27,6 +27,7 @@
         padding: 1rem;
         gap: 1rem;
         border: 1px solid rgba(0, 0, 0, 0.199);
+        margin-bottom: .2rem;
 
     }
 

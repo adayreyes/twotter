@@ -29,7 +29,10 @@ header {
   flex-direction: column;
   justify-content: space-between;
   height: 80vh;
-  border-right: 1px solid grey;
+}
+
+.trends{
+  padding: 1rem;
 }
 
 

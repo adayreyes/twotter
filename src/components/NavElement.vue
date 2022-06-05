@@ -6,7 +6,14 @@
 </template>
 
 <style scoped>
-    @import url(../assets/css/nav-element.css);
+    div{
+    display: flex;
+    gap: 1rem;
+    
+    }
+    img{
+    width: 30px;
+    }
 </style>
 
 <script>
